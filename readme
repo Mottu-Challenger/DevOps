@@ -1,0 +1,85 @@
+docker build -t minha-app-java .
+---
+docker run -p 8080: 8080 minha-app-java
+
+
+{
+    "iduser": 0,
+    "nome": "João da Silva",
+    "email": "joao.silva@email.com",
+    "cpf": 12345678900,
+    "rg": "MG1234567",
+    "dtaNasc": "1990-05-20",
+    "numeroDeCadastro": 100,
+    "ativo": true,
+    "nacionalidade": "BRASILEIRO",
+    "carteira": "CNH123456",
+    "enderco": "Rua das Flores, 123",
+    "contato": "(31) 99999-9999",
+    "plano": "Plano Premium",
+    "motos": [
+        {
+            "idMoto": 1,
+            "anoDelancamento": "2025-05-20",
+            "quilometragem": 1500,
+            "anoDeFabricacao": 2024,
+            "placa": "ABC1234",
+            "tagDaMoto": "TAG001",
+            "chassi": "9BWZZZ377VT004251",
+            "observacao": "Moto revisada recentemente",
+            "fotoDaMoto": "https://exemplo.com/foto_moto.jpg",
+            "ipva": true,
+            "licenciamento": true,
+            "dpvat": true,
+            "combustivel": "GASOLINA",
+            "typeMotos": "SPORT_ESD",
+            "user": {
+                "iduser": 0
+            },
+            "patioAtual": "Pátio Central",
+            "planoAssociado": "Plano Premium",
+            "multas": "Nenhuma multa",
+            "historicoDeReparos": "Troca de óleo em 2025-01-10",
+            "historicoDeChecks": "Check-up completo em 2025-03-15"
+        }
+    ]
+}
+
+---
+
+{
+    "anoDelançamento": "2023-05-01",
+    "quilometragem": 12000,
+    "anoDeFabricacao": 2022,
+    "placa": "ABC1D23",
+    "tagDaMoto": "MotoTrilha",
+    "chassi": "9BWZZZ377VT004251",
+    "observacao": "Revisada recentemente",
+    "fotoDaMoto": "https://example.com/foto.jpg",
+    "ipva": true,
+    "licenciamento": true,
+    "dpvat": false,
+    "combustivel": "GASOLINA",
+    "typeMotos": "SPORT_ESD",
+    "user": {
+        "idUser": 1,
+        "nome": "João da Silva",
+        "email": "joao.silva@email.com",
+        "cpf": 12345678900,
+        "rg": "MG1234567",
+        "dtaNasc": "1990-05-20",
+        "numeroDeCadastro": 100,
+        "ativo": true,
+        "nacionalidade": "BRASILEIRO",
+        "carteira": "CNH123456",
+        "enderco": "Rua das Flores, 123",
+        "contato": "(31) 99999-9999",
+        "plano": "Plano Premium",
+        "motos": []
+    },
+    "patioAtual": "Pátio Central",
+    "planoAssociado": "Plano Ouro",
+    "multas": "Nenhuma",
+    "historicoDeReparos": "Troca de óleo em 01/01/2024",
+    "historicoDeChecks": "Check completo em 01/03/2024"
+}
